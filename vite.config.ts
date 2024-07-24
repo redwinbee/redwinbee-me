@@ -5,7 +5,4 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
     base: "/redwinbee-me/",
     plugins: [react()],
-    server: {
-        host: true,
-    },
 });
