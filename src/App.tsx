@@ -6,7 +6,7 @@ import moment from "moment";
 
 export default function App() {
     function getPersonalDescription() {
-        let currAge = moment("19970702", "YYYYMMDD").fromNow().substring(0, 2);
+        const currAge = moment("19970702", "YYYYMMDD").fromNow().substring(0, 2);
         return `Hello, I am a Software Developer currently in the process of obtaining my B.S in Computer Science.
       I am currently ${currAge} years old, and while a lot of my training is in application programming, I am also
       very interested in systems programming. In my spare time you can find me either playing Overwatch or doing school
@@ -126,8 +126,7 @@ export default function App() {
                             phrases={["SSH", "RSA4096"]}
                         >
                             <p className="text-indigo-200">
-                                curl https://redwinbee.me/id_rsa.pub {">"}{">"}
-                                ~/.ssh/authorized_keys
+                                curl https://redwinbee.me/id_rsa.pub {">"}{">"} ~/.ssh/authorized_keys
                             </p>
                         </Card>
                     </div>
